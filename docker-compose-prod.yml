@@ -10,8 +10,8 @@ services:
       - 3000
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.portfolio-web.rule=Host(`nooridev.com`)"
-      - "traefik.http.routers.portfolio-web.entrypoints=websecure"
+      - "traefik.http.routers.portfolio-web.rule=Host(`nooridev.com`, `www.nooridev.com`)"
+      - "traefik.http.routers.portfolio-web.entrypoints=web"
       - "traefik.http.services.portfolio-web.loadbalancer.server.port=3000"
 
   portfolio-api:
@@ -24,7 +24,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.portfolio-api.rule=Host(`nooridev.com`) && PathPrefix(`/api`)"
-      - "traefik.http.routers.portfolio-api.entrypoints=websecure"
+      - "traefik.http.routers.portfolio-api.entrypoints=web"
       - "traefik.http.services.portfolio-api.loadbalancer.server.port=5000"
 
 networks:

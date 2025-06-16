@@ -14,7 +14,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.portfolio-web.rule=Host(`nooridev.com`) || Host(`www.nooridev.com`)"
       - "traefik.http.routers.portfolio-web.entrypoints=websecure"
-      - "traefik.http.routers.portfolio-web.tls.certresolver=letsencrypt"
+#      - "traefik.http.routers.portfolio-web.tls.certresolver=letsencrypt"
       - "traefik.http.services.portfolio-web.loadbalancer.server.port=3000"
 
   portfolio-api:
@@ -30,7 +30,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.portfolio-api.rule=Host(`nooridev.com`) && PathPrefix(`/api`)"
       - "traefik.http.routers.portfolio-api.entrypoints=websecure"
-      - "traefik.http.routers.portfolio-api.tls.certresolver=letsencrypt"
+#      - "traefik.http.routers.portfolio-api.tls.certresolver=letsencrypt"
       - "traefik.http.services.portfolio-api.loadbalancer.server.port=5000"
 
 networks:

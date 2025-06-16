@@ -8,10 +8,13 @@ services:
     restart: unless-stopped
     expose:
       - 3000
+    networks:
+      - traefik_default
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.portfolio-web.rule=Host(`nooridev.com`, `www.nooridev.com`)"
-      - "traefik.http.routers.portfolio-web.entrypoints=web"
+      - "traefik.http.routers.portfolio-web.rule=Host(`nooridev.com`) || Host(`www.nooridev.com`)"
+      - "traefik.http.routers.portfolio-web.entrypoints=websecure"
+      - "traefik.http.routers.portfolio-web.tls.certresolver=letsencrypt"
       - "traefik.http.services.portfolio-web.loadbalancer.server.port=3000"
 
   portfolio-api:
@@ -21,13 +24,15 @@ services:
     restart: unless-stopped
     expose:
       - 5000
+    networks:
+      - traefik_default
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.portfolio-api.rule=Host(`nooridev.com`) && PathPrefix(`/api`)"
-      - "traefik.http.routers.portfolio-api.entrypoints=web"
+      - "traefik.http.routers.portfolio-api.entrypoints=websecure"
+      - "traefik.http.routers.portfolio-api.tls.certresolver=letsencrypt"
       - "traefik.http.services.portfolio-api.loadbalancer.server.port=5000"
 
 networks:
-  default:
-    external:
-      name: traefik_default
+  traefik_default:
+    external: true

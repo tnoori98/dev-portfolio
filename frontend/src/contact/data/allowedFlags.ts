@@ -1,0 +1,1 @@
+export const allowedFlags = ["sendmail", "to", "name", "message", "email"]

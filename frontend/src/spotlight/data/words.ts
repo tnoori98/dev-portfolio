@@ -1,0 +1,1 @@
+export const words = ["Software Dev", "Freelancer", "Linux Enthusiast"]

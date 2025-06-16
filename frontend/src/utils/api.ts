@@ -1,7 +1,7 @@
 import type { Mail } from "../contact/interfaces/Mail"
 
 export const sendMail = async (data: Mail) => {
-    const result = await fetch("http://localhost:3001/api/contact", {
+    const result = await fetch("https://nooridev.com:5000/api/contact", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

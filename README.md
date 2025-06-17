@@ -1,28 +1,31 @@
-# 🌌 Dev Portfolio
+README:
+# 🌌 Eerie Dev Portfolio
 
-**Hey, I'm Noori — Fullstack Software Developer**
-
----
-
-## ✨ Personal Portfolio
-
-This portfolio shows what I build - so check it out
-
-Built using:
-
-- ⚡ **Vite** — lightning-fast dev environment
-- 🟦 **TypeScript** — for clean, typed code
-- ⚛️ **React** — modern, component-based UI
-- 🌐 **Node.js** — handles server-side mail functionality
+**Hear the whisper, once human, now a mere shadow — Full stack Software Developer Noori**
 
 ---
 
-## 📫 Open for Remote Work
+## ✨ Darkened Portfolio
 
-Feel free to reach out:  
-**[contact@nooridev.com](mailto:mail@nooridev.com)**
+This haunted portfolio manifests the ghoulish creations I've woven - venture in, if you dare.
 
-Or check out the live site:  
+Summoned using:
+
+- ⚡ **Vite** — a devilishly quick development ghoul
+- 🟦 **TypeScript** — the clean, typed incantations of my code
+- ⚛️ **React** — modern, component-based, unholy talismans
+- 🌐 **Node.js** — handling the otherworldly server-side mail conjurations
+
+---
+
+## 📫 Dark Correspondence Welcome 
+
+Don't hesitate to face your fears:  
+**[contact@nooridev.com](mailto:contact@nooridev.com)**
+
+Or, if you dare, meet me in my crypt:  
 🌍 [https://nooridev.com](https://nooridev.com)
 
 ---
+
+🪄 _Forged in the void with the power of_ [**readme-universe**](https://marketplace.visualstudio.com/items?itemName=readme-universe.readme-universe) _VS Code extension

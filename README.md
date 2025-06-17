@@ -17,7 +17,7 @@ Built using:
 
 ---
 
-## 📫 Get in Touch
+## 📫 Open for Remote Work
 
 Feel free to reach out:  
 **[contact@nooridev.com](mailto:mail@nooridev.com)**

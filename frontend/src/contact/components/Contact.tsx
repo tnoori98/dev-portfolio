@@ -170,6 +170,10 @@ const Contact = () => {
               placeholder="Your Email"
               className="contactInput contactInput-focus"
             />
+            <div className="sr-only">
+              <label htmlFor="confirm_email">Confirm Email</label>
+              <input type="text" name="confirm_email" id="confirm_email" autoComplete="off" tabIndex={-1}/>
+            </div>
             <textarea
               name="message"
               placeholder="Your Message"

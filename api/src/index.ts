@@ -16,6 +16,11 @@ const mailLimiter = rateLimit({
 app.post("/api/contact", mailLimiter, async (req, res) => {
     const mailData = req.body;
 
+    if(mailData.confirm_email && mailData.confirm_email.trim() !== ""){
+        console.warn("Honeypot triggered");
+        res.status(400).json({success: false, message: "Spam detected"});
+    }
+
     try{
         await sendMail(mailData);
         res.status(200).json({success: true});
@@ -25,4 +30,4 @@ app.post("/api/contact", mailLimiter, async (req, res) => {
     }
 });
 
-app.listen(5001, () => console.log("Server running on port 5000"));
+app.listen(5001, () => console.log("Server running on port 5001"));

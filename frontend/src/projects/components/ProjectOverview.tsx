@@ -12,7 +12,7 @@ const filterProjcts = projectlist.filter((proj)=>proj.category === activeTab);
   return (
     <section id="projects" className="relative spacing section-spacing">
       <h2 className="text-heading">My Projects</h2>
-      <div className="flex gap-4 mt-6 mb-8">
+      <div className="flex flex-wrap gap-2 sm:gap-4 mt-6 mb-8">
         {tabs.map((tab: Tab) => (
             <button key={tab.value}
                     onClick={()=>setActiveTab(tab.value)}

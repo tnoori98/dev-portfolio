@@ -1,12 +1,19 @@
 import express from "express";
 import cors from "cors";
+import rateLimit from "express-rate-limit";
 import { sendMail } from "./mail/mail";
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post("/api/contact", async (req, res) => {
+const mailLimiter = rateLimit({
+    windowMs: 60 * 1000,
+    max: 1,
+    message: "Too many requests, try again later"
+})
+
+app.post("/api/contact", mailLimiter, async (req, res) => {
     const mailData = req.body;
 
     try{

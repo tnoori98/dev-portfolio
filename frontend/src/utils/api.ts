@@ -1,7 +1,7 @@
 import type { Mail } from "../contact/interfaces/Mail"
 
 export const sendMail = async (data: Mail) => {
-    const result = await fetch("https://nooridev.com:5000/api/contact", {
+    const response = await fetch("https://nooridev.com/api/contact", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -9,10 +9,16 @@ export const sendMail = async (data: Mail) => {
         body: JSON.stringify(data)
     });
 
-    if(!result.ok){
-        const error = await result.json();
-        throw new Error(error.message);
+    if (!response.ok) {
+        let errorMessage = "Unknown error occurred";
+        try {
+            const error = await response.json();
+            errorMessage = error.message || errorMessage;
+        } catch (e) {
+            errorMessage = await response.text();
+        }
+        throw new Error(errorMessage);
     }
 
-    return result.json();
+    return response.json();
 }

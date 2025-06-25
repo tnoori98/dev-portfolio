@@ -14,7 +14,7 @@ const Spotlight = () => {
     return(
          <section
             className="relative h-screen bg-no-repeat bg-center bg-cover flex items-center justify-center"
-            style={{ backgroundImage: "url('/assets/spotlight-wide.png')" }}
+            style={{ backgroundImage: "url('/assets/spotlight-wide.webp')" }}
         >
         <div className="z-10 mt-20 md:mt-20 text-center md:text-left rounded-3xl bg-clip-text">
         <div className="bg-black/50 backdrop-blur-sm p-6 rounded-xl max-w-md">

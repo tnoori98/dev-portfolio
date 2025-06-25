@@ -9,7 +9,7 @@ const About = () => {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
        <div className="relative flex flex-col md:flex-row items-end justify-start grid-about-me-intro overflow-hidden rounded-2xl">
         <img
-            src="/assets/profile.png"
+            src="/assets/profile.webp"
             alt="Portrait of Noori"
             className="absolute inset-0 w-full h-full object-cover object-[center_35%] md:object-center opacity-90"
         />

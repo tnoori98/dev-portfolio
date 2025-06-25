@@ -16,7 +16,7 @@ export const projectlist: Project[] = [
     description: "An comprehensive employee scheduling and time management application",
     tech: ["TypeScript", "Angular", "Express.js", "TypeORM"],
     github: "https://github.com/tnoori98",
-    image: "/assets/simplescheduler.jpeg",
+    image: "/assets/simplescheduler.webp",
     details: "Developed a scheduling app using Angular (TypeScript) and Express.js, where employees can view shift plans and request vacation, sick leave, or work entries in a personal calendar.",
     category: "personal"
   },
@@ -25,7 +25,7 @@ export const projectlist: Project[] = [
     description: "An interactive map to pin favorite travel locations",
     tech: ["TypeScript", "NestJS", "React"],
     github: "https://github.com/tnoori98",
-    image: "/assets/simplebooker.jpeg",
+    image: "/assets/simplebooker.webp",
     details: "Built an interactive travel map using React (TypeScript) and NestJS, where agency employees can pin destinations and search for travel options based on tags like climate or time of year.",
     category: "personal"
   },

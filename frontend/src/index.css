@@ -66,6 +66,9 @@ body {
 .grid-about-me-main {
   @apply row-span-1 md:col-span-3 h-[16rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
 }
+.grid-about-me-blog {
+  @apply row-span-1 md:col-span-6 h-[16rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
+}
 
 .grid-techstack-color {
   @apply p-6 bg-gradient-to-b from-[#14323a] via-[#1b3744] to-[##26e4c4] rounded-2xl;

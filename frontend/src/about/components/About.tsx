@@ -62,6 +62,21 @@ const About = () => {
         I'm also a big fan of psychological thrillers and always the support player in both games and real life
         </p>
         </div>
+        <div className="grid-techstack-color grid-about-me-blog p-6 rounded-2xl text-white flex flex-col justify-center">
+          <h3 className="text-xl font-semibold mb-2 text-binaryGlow">Blog Post: Software Challenge</h3>
+          <p className="text-sm text-neutral-200 mb-2">
+            I wrote a blog post about one of my hardest software challenges and how this experience helped
+            shape my path to becoming a Freelance Software Developer
+          </p>
+          <a
+            href="https://app.daily.dev/posts/new-job-hotel-opening-in-5-months-i4kgaw2ld"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-binaryGlow underline hover:text-white transition"
+          >
+            You can read the full story on daily.dev →
+          </a>
+        </div>
       </div>
     </section>
     )

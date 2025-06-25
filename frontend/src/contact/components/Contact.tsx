@@ -142,7 +142,7 @@ const Contact = () => {
         {mode === "linux" ? (
           <form onSubmit={handleTerminalSubmit} className="w-full space-y-3">
             <p className="font-mono text-neutral-500 text-xs">
-              $ Enter command below to send message
+              $ Enter command below to send message (Use sendmail --help)
             </p>
             <textarea
               name="command"

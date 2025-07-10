@@ -6,7 +6,7 @@ export const experience: Experience[] = [
         job: "Software Developer",
         date: "Since 2025, Austria",
         content: ["Specializing in full-stack development with technologies like React, ASP.NET MVC, Express.js and Next.js", 
-        "Designing and developing custom web, desktop, and automation solutions for clients acrossindustries"],
+        "Designing and developing custom web, desktop, and automation solutions for clients across industries"],
     },
     {
         title: "Siemens",

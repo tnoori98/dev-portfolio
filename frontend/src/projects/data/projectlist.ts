@@ -2,6 +2,15 @@ import type { Project } from "../interfaces/Project";
 
 export const projectlist: Project[] = [
   {
+    title: "langchain-ai",
+    description: "LangChain.js - Building applications with LLMs through composability",
+    tech: ["TypeScript"],
+    github: "https://github.com/langchain-ai/langchainjs",
+    image: "assets/langchain-logo.webp",
+    details: "LangChain is a framework for developing applications powered by language models. It enables applications that: Are context-aware: connect a language model to sources of context (prompt instructions, few shot examples, content to ground its response in, etc.) Reason: rely on a language model to reason (about how to answer based on provided context, what actions to take, etc.)",
+    category: "opensource"
+  },
+  {
     title: "readme-universe",
     description: "Remix your README.md files into epic narratives",
     tech: ["TypeScript", "VS Code Extension", "OpenAI API"],
@@ -49,13 +58,13 @@ export const projectlist: Project[] = [
   {
     title: "Time Tracking System",
     description: "A terminal-based system for tracking employee project hours using RFID cards",
-    tech: [".NET Blazor", "Console Application"],
+    tech: [".NET 8.0", "Console Application"],
     image: "/assets/spotlight-bg.webp",
-    details: "Developed a terminal-based time tracking tool that recorded project work hours via RFID card scans. Users scanned in/out at terminals to log time against specific projects (e.g., 2 hours on Project ABC). Implemented backend logic using .NET and Blazor Server to handle authentication, time calculations, and data persistence.",
+    details: "Developed a terminal-based time tracking tool that recorded project work hours via RFID card scans. Users scanned in/out at terminals to log time against specific projects (e.g., 2 hours on Project ABC). Implemented backend logic using .NET to handle authentication, time calculations, and data persistence.",
     category: "siemens"
   },
   {
-    title: "Bank Austria RAID Monitor",
+    title: "RAID Monitoring System - Banking Environment",
     description: "A lightweight RAID monitoring utility to detect hardware failures in real-time",
     tech: [".NET 8.0", "Console Application"],
     image: "/assets/spotlight-bg.webp",

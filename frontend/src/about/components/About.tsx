@@ -45,7 +45,7 @@ const About = () => {
         <div className="grid-techstack-color grid-about-me-main p-6 rounded-2xl text-white flex flex-col justify-center">
         <Terminal>
         <TypingAnimation delay={0}>
-          <TypingAnimation>$ whoami && timedatectl | grep "Time zone"</TypingAnimation>
+          <TypingAnimation>$ whoami && timedatectl | grep "time zone"</TypingAnimation>
           <AnimatedSpan delay={3000}>👨‍💻 noori | contact@nooridev.com</AnimatedSpan>
           <AnimatedSpan delay={3100}>📍 Location Austria</AnimatedSpan>
           <AnimatedSpan delay={3200}>🕒 Timezone GMT+1</AnimatedSpan>
@@ -69,7 +69,7 @@ const About = () => {
             shape my path to becoming a Freelance Software Developer
           </p>
           <a
-            href="https://app.daily.dev/posts/new-job-hotel-opening-in-5-months-i4kgaw2ld"
+            href="https://app.daily.dev/posts/new-job-hotel-opening-in-5-months-iuixhi5b8"
             target="_blank"
             rel="noopener noreferrer"
             className="text-binaryGlow underline hover:text-white transition"
